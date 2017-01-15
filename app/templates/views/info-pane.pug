@@ -1,0 +1,9 @@
+h2.block_header Info
+section.data-item
+  h5.data-item_header
+  div.data-item_value
+    span(ng-show="formModel.name") Name
+    span.pull-right {{formModel.name}}
+  div.data-item_value
+    i.pull-right(ng-repeat="flag in formModel.flags" class="icon-{{flag}}")
+  .clearfix

@@ -1,0 +1,42 @@
+
+<div multiple-lists="multiple-lists">
+  <div class="col-sm-12 col-md-4 col-lg-4">
+    <section class="bg-primary">
+      <form class="list-filters">
+        <div class="form-group">
+          <label class="check-input">Reverse order
+            <input class="form-control" type="checkbox" ng-model="reverseOrderFirstList"/>
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="text-input">Search
+            <input class="form-control" ng-model="filterValueFirstList"/>
+          </label>
+        </div>
+      </form>
+      <list button-click="showInForm" order-value="'name'" reverse-order="reverseOrderFirstList" filter-arg-1="{name : filterValueFirstList}" filter-name="'filter'"></list>
+    </section>
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-4">
+    <section class="bg-info">
+      <info-pane form-model="formModel"></info-pane>
+    </section>
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-4">
+    <section class="bg-primary">
+      <form class="list-filters">
+        <div class="form-group">
+          <h5>Filters</h5>
+        </div>
+        <div class="form-group">
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary" ng-repeat="(name, mask) in flags" for="checkbox-{{name}}" ng-class="inputModels[name] ? 'active' : ''"><i class="icon-{{name}}"></i>
+              <input type="checkbox" autocomplete="off" id="checkbox-{{name}}" checked="checked" ng-model="inputModels[name]" ng-change="updateSecondListFilter(name)"/>
+            </label>
+          </div>
+        </div>
+      </form>
+      <list button-click="showInForm" filter-name="'byArray'" filter-arg-1="filterValueSecondList" filter-arg-2="'flags'"></list>
+    </section>
+  </div>
+</div>

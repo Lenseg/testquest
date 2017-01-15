@@ -1,0 +1,4 @@
+ul.buttons-list
+  li.buttons-list_item.bg-primary(data-drag="true" jqyoui-draggable ng-repeat="item in data | orderBy : orderValue : reverseOrder | wrapper : filterName : filterArg1 : filterArg2")
+    button.btn.btn-success.text-left.btn-block(ng-click="select(item, $index)" ng-class="{active: $index == selected}") {{item.name}}
+      i.pull-right(ng-repeat="flag in item.flags" class="icon-{{flag}}")

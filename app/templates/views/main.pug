@@ -1,0 +1,25 @@
+div(multiple-lists)
+  div.col-sm-12.col-md-4.col-lg-4
+    section.bg-primary
+      form.list-filters
+        div.form-group
+          label.check-input Reverse order
+            input.form-control(type="checkbox" ng-model='reverseOrderFirstList')
+        div.form-group
+          label.text-input Search
+            input.form-control(ng-model="filterValueFirstList")
+      list(button-click='showInForm' order-value="'name'" reverse-order="reverseOrderFirstList" filter-arg-1="{name : filterValueFirstList}" filter-name="'filter'")
+  div.col-sm-12.col-md-4.col-lg-4
+    section.bg-info
+      info-pane(form-model="formModel")
+  div.col-sm-12.col-md-4.col-lg-4
+    section.bg-primary
+      form.list-filters
+        div.form-group
+          h5 Filters
+        div.form-group
+          div.btn-group(data-toggle="buttons")
+            label.btn.btn-primary(ng-repeat="(name, mask) in flags" for="checkbox-{{name}}" ng-class="inputModels[name] ? 'active' : ''")
+              i(class="icon-{{name}}")
+              input(type="checkbox" autocomplete="off" id="checkbox-{{name}}" checked ng-model="inputModels[name]" ng-change="updateSecondListFilter(name)")
+      list(button-click="showInForm" filter-name="'byArray'" filter-arg-1="filterValueSecondList" filter-arg-2="'flags'")

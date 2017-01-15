@@ -1,0 +1,6 @@
+
+<ul class="buttons-list">
+  <li class="buttons-list_item bg-primary" data-drag="true" jqyoui-draggable="jqyoui-draggable" ng-repeat="item in data | orderBy : orderValue : reverseOrder | wrapper : filterName : filterArg1 : filterArg2">
+    <button class="btn btn-success text-left btn-block" ng-click="select(item, $index)" ng-class="{active: $index == selected}">{{item.name}}<i class="pull-right icon-{{flag}}" ng-repeat="flag in item.flags"></i></button>
+  </li>
+</ul>

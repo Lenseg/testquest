@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="heart" unicode="&#xe800;" d="M500-79q-14 0-25 10l-348 336q-5 5-15 15t-31 37-38 54-30 67-13 77q0 123 71 192t196 70q34 0 70-12t67-33 54-38 42-38q20 20 42 38t54 38 67 33 70 12q125 0 196-70t71-192q0-123-128-251l-347-335q-10-10-25-10z" horiz-adv-x="1000" />
+
+<glyph glyph-name="flash" unicode="&#xe801;" d="M494 534q10-11 4-24l-302-646q-7-14-23-14-2 0-8 1-9 3-14 11t-3 16l110 451-226-56q-2-1-7-1-10 0-17 7-10 8-7 21l112 461q2 8 9 13t15 5h183q11 0 18-7t7-17q0-4-2-10l-96-258 221 54q5 2 7 2 11 0 19-9z" horiz-adv-x="500" />
+
+<glyph glyph-name="flower" unicode="&#xe81a;" d="M165 750c-13 0-15-28-15-50l0-100c0-102 100-153 200-150l0-400c-50 100-200 250-350 200 0 0 125-300 375-300s375 300 375 300c-150 50-300-100-350-200l0 400c100-3 200 48 200 150l0 100c0 22-2 50-15 50-10 0-21-11-35-25l-75-75-75 84c-8 9-12 16-25 16-13 0-17-7-25-16l-75-84-75 75c-14 14-25 25-35 25z" horiz-adv-x="750" />
+
+<glyph glyph-name="sun" unicode="&#xf185;" d="M821 350q0 65-25 125t-69 102-102 69-125 25-125-25-102-69-69-102-25-125 25-125 69-102 102-69 125-25 125 25 102 69 69 102 25 125z m154-155q-2-8-11-11l-163-53v-171q0-9-7-15-8-5-16-2l-163 53-100-139q-6-7-15-7t-14 7l-101 139-163-53q-8-3-16 2-7 6-7 15v171l-163 53q-9 3-11 11-3 10 2 17l100 138-100 138q-5 8-2 17 2 8 11 11l163 53v171q0 9 7 15 8 5 16 2l163-53 101 139q5 6 14 6t15-6l100-139 163 53q8 3 16-2 7-6 7-15v-171l163-53q9-3 11-11 3-9-2-17l-100-138 100-138q5-7 2-17z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
